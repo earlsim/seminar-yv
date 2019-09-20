@@ -1,0 +1,404 @@
+.ctx_seminar .sub_visual {
+  background: url(../img/seminar_bg.png) 50% 0 no-repeat;
+}
+
+.seminar-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 16px;
+  font-family: 'Noto Sans';
+  margin-top: 6.5rem;
+
+
+  @media ($m-s) {
+    margin-top: 0;
+  }
+  @media (min-width: 1296px) {
+    padding: 0;
+  }
+}
+
+.seminar-title {
+  font-weight: 600!important;
+}
+
+.events {
+  display: flex;
+
+  &__nav {
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    padding: 24px;
+    border: 1px solid $c-border;
+    background-color: $c-gray-first;
+    transition: left .4s;
+    
+    &.is-active {
+      left: 0;
+    }
+  }
+
+  &__section {
+    flex-basis: 100%;
+  }
+
+  &-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media ($m-s) {
+    &__nav {
+      position: static;
+      display: block;
+      flex-basis: 25%;
+      width: auto;
+    }
+
+    &__section {
+      flex-basis: 75%;
+    }
+  }
+}
+
+.events-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px;
+  border: 1px solid $c-border;
+
+
+  @media ($m-s) {
+    width: 50%;
+  }
+
+  @media ($m-m) {
+    width: 33.333%;
+  }
+}
+
+.item-date, .item-loc {
+  margin-bottom: 8px;
+  font-size: 18px;
+  line-height: 1.389em;
+  color: $c-text-primary;
+}
+.item-title {
+  margin-bottom: 8px;
+  height: 242px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.35em;
+  color: $c-black;
+}
+
+.nav-city,.nav-date {
+  margin-bottom: 42px;
+}
+
+.date-picker {
+  margin: 14px 0 17px 0;
+  width: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+
+.nav-city__select {
+  margin: 14px 0 17px 0;
+  color: $c-text-primary;
+}
+
+.nav-city__select {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+}
+
+.nav-title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.350em;
+  color: $c-black;
+}
+
+.nav-topic__input {
+  display: none;
+}
+
+.nav-topic__input:checked ~ .nav-topic__check:after {
+  opacity: 1;
+}
+
+.nav-topic__check {
+  position: relative;
+  display: inline-block;
+  margin-bottom: -6px;
+  margin-right: 16px;
+  width: 24px;
+  height: 24px;
+  background-color: $c-white;
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: 0;
+    background: url("../img/check.svg") no-repeat center;
+    opacity: 0;
+    transition: opacity .2s;
+  }
+}
+
+.topic-option {
+  padding: 14px 0 17px 0;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.389em;
+  user-select: none;
+}
+
+.block-title {
+  margin: 64px 0 64px 0;
+  font-size: 28px;
+  line-height: 1.361em;
+  font-weight: 600;
+  color: $c-black;
+
+  &--mb30 {
+    margin-bottom: 30px;
+  }
+
+  @media ($m-l) {
+    font-size: 36px;
+  }
+}
+
+.al-left {
+  text-align: left;
+}
+
+.al-center {
+  text-align: center;
+}
+
+.manager-section, .specialist-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 86px;
+}
+.manager-section {
+  flex-direction: column-reverse;
+  padding-bottom: 128px;
+
+  @media($m-m) {
+    flex-direction: row;
+  }
+}
+
+.specialist-section {
+  flex-direction: column;
+  padding-top: 86px;
+
+  @media($m-m) {
+    flex-direction: row;
+  }
+}
+.section-text {
+  width: 100%;
+  margin-top: 24px;
+
+  @media($m-m) {
+    width: 37.5%;
+    margin-top: 0;
+  }
+}
+
+.section-image {
+  position: relative;
+  width: 100%;
+
+  &--right-sqr:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -86px;
+    right: -50%;
+    background-color: $c-gray-second;
+  }
+
+  &--left-sqr:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -86px;
+    left: -50%;
+    background-color: $c-gray-second;
+  }
+
+  @media($m-m) {
+    width: 57.5%;
+  }
+}
+
+.section-text__title {
+  margin-bottom: 30px;
+  font-size: 36px;
+  line-height: 1.357em;
+  color: $c-black;
+  font-weight: 600;
+
+
+  @media ($m-ml) {
+    font-size: 56px;
+  }
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.389em;
+  color: $c-text-primary;
+}
+
+.grid-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -24px 0 0 -64px;
+
+  &__item {
+    width: 100%;
+    padding: 24px 0 0 64px;
+  }
+
+  @media ($m-xs) {
+    &__item {
+      width: 50%;
+    }
+  }
+}
+
+.grid-item__title {
+  margin-bottom: 8px;
+  font-size: 20px;
+  line-height: 1.350em;
+  color: $c-black;
+  font-weight: 600;
+}
+
+.grid-item__link {
+
+  a {
+    text-decoration: underline !important;
+  }
+}
+
+.soon-events {
+  padding-bottom: 40px;
+}
+
+.last-events {
+  padding-bottom: 64px;
+}
+
+//speakers
+.speakers {
+  position: relative;
+  padding-top: 64px;
+
+  &:after {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    width: 300%;
+    height: 100%;
+    top: 0;
+    right: -100%;
+    background-color: $c-gray-second;
+  }
+}
+
+.speakers-block {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -24px 0 0 -24px;
+  padding-bottom: 64px;
+
+  &__card {
+    display: flex;
+    width: 100%;
+    padding: 24px 0 0 24px;
+  }
+
+  @media ($m-xs) {
+    &__card {
+      width: 50%;
+    }
+  }
+}
+
+.speakers-card__pic {
+  width: 163px;
+  height: 228px;
+}
+
+.speakers-card__content {
+  width: 75%;
+  padding: 24px;
+  background-color: $c-white;
+}
+
+.card-content__title {
+  margin-bottom: 16px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.350em;
+  color: $c-black;
+}
+
+.legal {
+  margin-bottom: 196px;
+}
+
+.legal-docs {
+  margin-top: 24px;
+}
+
+.legal-docs__item {
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  border-bottom: 1px solid $c-border;
+
+  span {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    margin-right: 24px;
+    border-radius: 100%;
+    background: url("../img/file.svg") $c-crimson no-repeat center;
+  }
+  a {
+    display: inline !important;
+  }
+}
+
+//mobile version
+.mobile-filters {
+
+  @media ($m-s) {
+    display: none;
+  }
+
+}
