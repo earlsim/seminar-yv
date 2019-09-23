@@ -181,13 +181,13 @@ span.arrow.right {right:0;}
 
 /* BUTTON */
 .btn_type01 {display:inline-block; *display:inline-block; position:relative; overflow:hidden; background:#7c828b; zoom:1;}
-.btn_type01 a {position:relative; background:url("../images/icon/more_arrow.png") 90% 50% no-repeat; color:#fff; display:block; font-size:.9rem; font-weight:500; width:8rem; height:2.5rem; padding-left:10%; line-height:2.5rem; text-align:left; z-index:1;}
+.btn_type01 a {position:relative; background:url("../img/icon/more_arrow.png") 90% 50% no-repeat; color:#fff; display:block; font-size:.9rem; font-weight:500; width:8rem; height:2.5rem; padding-left:10%; line-height:2.5rem; text-align:left; z-index:1;}
 .btn_type01 .hEffect {display:block; position:absolute; top:50%; left:50%; background:#f16681; width:0%; height:0%; border-radius:50%;}
 
 .btn_type02 {display:inline-block; *display:inline-block; position:relative; overflow:hidden; background:#fff; zoom:1;}
-.btn_type02 a {display:block; position:relative; background:url("../images/icon/more_arrow_gray.png") 90% 50% no-repeat; color:#7b848c; font-size:.9rem; font-weight:500; width:8rem; height:2.5rem; padding-left:10%; line-height:2.5rem; border:1px solid #e3e3e3; text-align:left; z-index:1;}
+.btn_type02 a {display:block; position:relative; background:url("../img/icon/more_arrow_gray.png") 90% 50% no-repeat; color:#7b848c; font-size:.9rem; font-weight:500; width:8rem; height:2.5rem; padding-left:10%; line-height:2.5rem; border:1px solid #e3e3e3; text-align:left; z-index:1;}
 .btn_type02 .hEffect {display:block; position:absolute; top:50%; left:50%; background:#f16681; width:0%; height:0%; border-radius:50%;}
-.btn_type02:hover a {background:url("../images/icon/more_arrow.png") 90% 50% no-repeat; color:#fff;}
+.btn_type02:hover a {background:url("../img/icon/more_arrow.png") 90% 50% no-repeat; color:#fff;}
 
 /* BACKGROUND LINE */
 .lineBg {position:absolute; top:0; left:0; width:100%; z-index:9;}
@@ -284,8 +284,8 @@ span.arrow.right {right:0;}
 .footer .aside .asideTop ul:after {content:""; display:block; clear:both;}
 .footer .aside .asideTop ul li {float:left;}
 .footer .aside .asideTop ul li a {font-size:.8rem;}
-.footer .aside .asideTop ul li.sProduct a {display:block; background:#f4f4f4 url(../images/icon/arrow_top.png) 80% 50% no-repeat; width:13rem; height:3rem; padding-left:15%; line-height:3rem; font-weight:500; color:#f16681; border-left:2px solid #ececec; text-align:left;}
-.footer .aside .asideTop ul li.sProduct.active a {background:#fff url(../images/icon/arrow_bot.png) 80% 50% no-repeat !important; border-left:2px solid #fff;}
+.footer .aside .asideTop ul li.sProduct a {display:block; background:#f4f4f4 url(../img/icon/arrow_top.png) 80% 50% no-repeat; width:13rem; height:3rem; padding-left:15%; line-height:3rem; font-weight:500; color:#f16681; border-left:2px solid #ececec; text-align:left;}
+.footer .aside .asideTop ul li.sProduct.active a {background:#fff url(../img/icon/arrow_bot.png) 80% 50% no-repeat !important; border-left:2px solid #fff;}
 .footer .aside .asideTop ul li.moveTop a {display:block; background:#7a818b; width:3.5rem; height:3rem; line-height:3rem; font-weight:500; color:#fff; text-align:center;}
 
 .footer .aside .asideBot {height:12rem;}

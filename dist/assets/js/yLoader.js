@@ -1,6 +1,6 @@
 //document ready
 $(function(){
-    swiperEvent.init();
+    // swiperEvent.init();
     textEvent.init();
     gnbEvent.init();
     footEvent.init();
@@ -377,7 +377,7 @@ var lgGroup = {
     mapOffice:[37.5279663,126.9290969],
     mapPark:[37.562273,126.827691],
     init:function(){
-        googleMap.init(this.mapOffice[0],this.mapOffice[1]);
+        // googleMap.init(this.mapOffice[0],this.mapOffice[1]);
         this.listActive();
     },
     listActive:function(){
@@ -390,12 +390,12 @@ var lgGroup = {
                 case 0:
                     $(".map_tap .office").removeClass("blind");
                     $(".map_tap .park").addClass("blind");
-                    googleMap.init(_.mapOffice[0],_.mapOffice[1]);
+                    // googleMap.init(_.mapOffice[0],_.mapOffice[1]);
                     break;
                 case 1:
                     $(".map_tap .office").addClass("blind");
                     $(".map_tap .park").removeClass("blind");
-                    googleMap.init(_.mapPark[0],_.mapPark[1]);
+                    // googleMap.init(_.mapPark[0],_.mapPark[1]);
                     break;
             }
         });
@@ -406,7 +406,7 @@ var lgGroup = {
 var lgChem = {
     mapOffice:[37.562273,126.827691],
     mapPlant:[35.9466547,127.0040843],
-    slideImg:["slide00.jpg","slide01.jpg","slide02.jpg","slide03.jpg","slide04.jpg"],
+    slideImg:["slide00.jpg","slide01.jpg","slide02.jpg"],
     slideIdx:0,
     prevIdx:0,
     nextIdx:0,
@@ -415,7 +415,7 @@ var lgChem = {
     init:function(){
         this.prevIdx = this.slideImg.length-1;
         this.nextIdx = this.slideIdx+1;
-        googleMap.init(this.mapOffice[0],this.mapOffice[1]);
+        // googleMap.init(this.mapOffice[0],this.mapOffice[1]);
         this.listActive();
         this.slideEvent();
     },
@@ -441,7 +441,7 @@ var lgChem = {
     },
     slideEvent:function(){
         var _ = this;
-        var srcPath = "/local/templates/yvoire/images/sub/lgchem/";
+        var srcPath = "/assets/img/sub/location/";
         var maxIdx = this.slideImg.length - 1;
         $(".slide_box .slide_navi span a").on("click",function(){
             var curIdx = $(this).parent().index();

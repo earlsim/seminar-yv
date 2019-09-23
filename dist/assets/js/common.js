@@ -210,57 +210,57 @@ var footEvent = {
 };
 
 //Swiper Slide Event
-var swiperEvent = {
-    init:function(){
-        this.footerEvent();
-    },
-    footerEvent:function(){
-        var mySwiper = new Swiper("#product_visual",{
-            slidesPerView:6,
-            slidesPerGroup:6,
-            autoplay:false,
-            loop: false,
-            prevButton: "#fPrev",
-            nextButton: "#fNext"
-	});
-        $("#fPrev").on("click",function(){ mySwiper.swipePrev(); });
-        $("#fNext").on("click",function(){ mySwiper.swipeNext(); });
-        
-        $(function(){
-            var windowWidth = $(window).width();
-            if(windowWidth < 1281 && windowWidth > 769) {
-                mySwiper.params.slidesPerView = 4;
-                mySwiper.params.slidesPerGroup = 4;
-            }else if(windowWidth < 769 && windowWidth > 414){
-                mySwiper.params.slidesPerView = 3;
-                mySwiper.params.slidesPerGroup = 3;
-            }else if(windowWidth < 415){
-                mySwiper.params.slidesPerView = 2;
-                mySwiper.params.slidesPerGroup = 2;
-            }else{
-                mySwiper.params.slidesPerView = 6;
-                mySwiper.params.slidesPerGroup = 6;
-            }
-        });
-        
-        $(window).resize(function(){
-            var windowWidth = $(window).width();
-            if(windowWidth < 1281 && windowWidth > 769) {
-                mySwiper.params.slidesPerView = 4;
-                mySwiper.params.slidesPerGroup = 4;
-            }else if(windowWidth < 769 && windowWidth > 414){
-                mySwiper.params.slidesPerView = 3;
-                mySwiper.params.slidesPerGroup = 3;
-            }else if(windowWidth < 415){
-                mySwiper.params.slidesPerView = 2;
-                mySwiper.params.slidesPerGroup = 2;
-            }else{
-                mySwiper.params.slidesPerView = 6;
-                mySwiper.params.slidesPerGroup = 6;
-            }
-        });
-    }
-};
+// var swiperEvent = {
+//     init:function(){
+//         this.footerEvent();
+//     },
+//     footerEvent:function(){
+//         var mySwiper = new Swiper("#product_visual",{
+//             slidesPerView:6,
+//             slidesPerGroup:6,
+//             autoplay:false,
+//             loop: false,
+//             prevButton: "#fPrev",
+//             nextButton: "#fNext"
+// 	});
+//         $("#fPrev").on("click",function(){ mySwiper.swipePrev(); });
+//         $("#fNext").on("click",function(){ mySwiper.swipeNext(); });
+//
+//         $(function(){
+//             var windowWidth = $(window).width();
+//             if(windowWidth < 1281 && windowWidth > 769) {
+//                 mySwiper.params.slidesPerView = 4;
+//                 mySwiper.params.slidesPerGroup = 4;
+//             }else if(windowWidth < 769 && windowWidth > 414){
+//                 mySwiper.params.slidesPerView = 3;
+//                 mySwiper.params.slidesPerGroup = 3;
+//             }else if(windowWidth < 415){
+//                 mySwiper.params.slidesPerView = 2;
+//                 mySwiper.params.slidesPerGroup = 2;
+//             }else{
+//                 mySwiper.params.slidesPerView = 6;
+//                 mySwiper.params.slidesPerGroup = 6;
+//             }
+//         });
+//
+//         $(window).resize(function(){
+//             var windowWidth = $(window).width();
+//             if(windowWidth < 1281 && windowWidth > 769) {
+//                 mySwiper.params.slidesPerView = 4;
+//                 mySwiper.params.slidesPerGroup = 4;
+//             }else if(windowWidth < 769 && windowWidth > 414){
+//                 mySwiper.params.slidesPerView = 3;
+//                 mySwiper.params.slidesPerGroup = 3;
+//             }else if(windowWidth < 415){
+//                 mySwiper.params.slidesPerView = 2;
+//                 mySwiper.params.slidesPerGroup = 2;
+//             }else{
+//                 mySwiper.params.slidesPerView = 6;
+//                 mySwiper.params.slidesPerGroup = 6;
+//             }
+//         });
+//     }
+// };
 
 //Label Text Event
 var textEvent = {
@@ -312,32 +312,32 @@ var lineBg = {
 };
 
 //Google Map
-var googleMap = {
-    init:function(coor01, coor02){
-        $("#google_map").html("");
-        var mapOptions = { //구글 맵 옵션 설정
-            zoom : 16, //기본 확대율
-            center : new google.maps.LatLng(coor01,coor02), // 지도 중앙 위치
-            scrollwheel : false, //마우스 휠로 확대 축소 사용 여부
-            mapTypeControl : false //맵 타입 컨트롤 사용 여부
-        };
-
-        var map = new google.maps.Map(document.getElementById('google_map'), mapOptions); //구글
-        
-        var image = "/local/templates/yvoire/images/icon/marker.png"; //마커 이미지 설정
- 
-        var marker = new google.maps.Marker({ //마커 설정
-            map : map,
-            position : map.getCenter(), //마커 위치
-            icon : image //마커 이미지
-        });
-        google.maps.event.addDomListener(window, "resize", function() { //리사이즈에 따른 마커 위치
-            var center = map.getCenter();
-            google.maps.event.trigger(map, "resize");
-            map.setCenter(center); 
-        });
-    }
-};
+// var googleMap = {
+//     init:function(coor01, coor02){
+//         $("#google_map").html("");
+//         var mapOptions = { //구글 맵 옵션 설정
+//             zoom : 16, //기본 확대율
+//             center : new google.maps.LatLng(coor01,coor02), // 지도 중앙 위치
+//             scrollwheel : false, //마우스 휠로 확대 축소 사용 여부
+//             mapTypeControl : false //맵 타입 컨트롤 사용 여부
+//         };
+//
+//         var map = new google.maps.Map(document.getElementById('google_map'), mapOptions); //구글
+//
+//         var image = "/local/templates/yvoire/images/icon/marker.png"; //마커 이미지 설정
+//
+//         var marker = new google.maps.Marker({ //마커 설정
+//             map : map,
+//             position : map.getCenter(), //마커 위치
+//             icon : image //마커 이미지
+//         });
+//         google.maps.event.addDomListener(window, "resize", function() { //리사이즈에 따른 마커 위치
+//             var center = map.getCenter();
+//             google.maps.event.trigger(map, "resize");
+//             map.setCenter(center);
+//         });
+//     }
+// };
 
 //PAGING
 var paging = {

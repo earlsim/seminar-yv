@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="assets/css/mediaQuery.css">
     <link rel="stylesheet" href="assets/css/common.css">
     <link rel="stylesheet" href="assets/css/sub.css">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 </head>
 <body>
 <div class="wrap">
@@ -136,7 +137,7 @@
             <div class="visual_content">
                 <div class="inner">
                     <h2 class="seminar-title">Курсы косметологии</h2>
-                    <h3>Линия препаратов Yvoire от LG aesthetics</h3> <span class="page_navi left"><a href="/lgchem/"
+                    <h3 class="sub-title">Lorem ipsum</h3> <span class="page_navi left"><a href="/lgchem/"
                                                                                                       title="lgchem page"><img
                         alt="ЛЕВАЯ СТРАНИЦА" src="assets/img/icon/page_navigator_left.png"></a></span> <span
                         class="page_navi right"><a href="/whyyvoire/" title="why yvoire"><img alt="ПРАВАЯ СТРАНИЦА"
@@ -172,7 +173,10 @@
             <div class="seminar-container">
                 <article class="events">
                     <aside class="events__nav js-nav">
-                        <div class="mobile-close js-close"></div>
+                        <div class="mobile-close js-close">
+                            <span></span>
+                            <span></span>
+                        </div>
                         <div class="nav-city">
                             <div class="nav-title">Город:</div>
                             <select class="nav-city__select">
@@ -185,7 +189,7 @@
                         </div>
                         <div class="nav-date">
                             <div class="nav-title">Дата проведения</div>
-                            <input type="text" class="date-picker" placeholder="Выберите дату" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+                            <input type="text" class="date-picker" id="datepicker" placeholder="Выберите дату">
 
                         </div>
                         <div class="nav-topic">
@@ -432,6 +436,7 @@
     <div class="footer"></div>
 </div>
 <script src="assets/js/jquery-1.11.3.min.js"></script>
+<script src="assets/js/jquery-ui-1.11.3.min.js"></script>
 <script src="assets/js/common.js"></script>
 <script src="assets/js/yLoader.js"></script>
 <script src="assets/js/bundle.js" defer></script>

@@ -138,7 +138,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _scs
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("document.querySelector('.js-mobile-filters').addEventListener('click', function () {\n  let item = document.querySelector('.js-nav');\n  item.classList.add('is-active');\n});\n\n//# sourceURL=webpack:///./src/js/main.js?");
+eval("let fillerEl = document.querySelector('.js-mobile-filters');\n\nif (fillerEl) {\n  fillerEl.addEventListener('click', function () {\n    let item = document.querySelector('.js-nav');\n    item.classList.add('is-active');\n  }, false);\n}\n\n;\nlet closeEl = document.querySelector('.js-close');\n\nif (closeEl) {\n  closeEl.addEventListener('click', function () {\n    let item = document.querySelector('.js-nav');\n    item.classList.remove('is-active');\n  });\n}\n\n;\n$(function () {\n  lgChem.init();\n});\n$(function () {\n  $(\"#datepicker\").datepicker();\n});\n\n//# sourceURL=webpack:///./src/js/main.js?");
 
 /***/ }),
 
