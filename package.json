@@ -33,5 +33,7 @@
     "webpack-cli": "^3.2.1",
     "webpack-node-externals": "^1.7.2"
   },
-  "dependencies": {}
+  "dependencies": {
+    "jquery-ui": "^1.12.1"
+  }
 }
